@@ -1,0 +1,25 @@
+From 8f870e079fbe20f3bf184675ad4e2ccc5235af6b Mon Sep 17 00:00:00 2001
+From: fsessegoinfomob <fausto.sessego@infomob.it>
+Date: Thu, 4 Feb 2016 15:22:23 +0100
+Subject: [PATCH 2/2] Board name changed
+
+---
+ board/tibidabo/mx6tibidabo.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/board/tibidabo/mx6tibidabo.c b/board/tibidabo/mx6tibidabo.c
+index 4ff36ca..df03f9f 100644
+--- a/board/tibidabo/mx6tibidabo.c
++++ b/board/tibidabo/mx6tibidabo.c
+@@ -697,7 +697,7 @@ int board_late_init(void)
+ 
+ int checkboard(void)
+ {
+-	puts("Board: MX6-Tibidaboo\n");
++	puts("Board: MX6-Tibidabo\n");
+ 	return 0;
+ }
+ 
+-- 
+1.9.1
+
