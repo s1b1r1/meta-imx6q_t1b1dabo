@@ -1,0 +1,26 @@
+From f64c09f8fb931f00bc5315ba5d021fd5193a1426 Mon Sep 17 00:00:00 2001
+From: fsessegoinfomob <fausto.sessego@infomob.it>
+Date: Mon, 8 Feb 2016 10:12:32 +0100
+Subject: [PATCH] Added directory deconfig
+
+---
+ configs/mx6q_tibidabo_defconfig | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 configs/mx6q_tibidabo_defconfig
+
+diff --git a/configs/mx6q_tibidabo_defconfig b/configs/mx6q_tibidabo_defconfig
+new file mode 100644
+index 0000000..4554509
+--- /dev/null
++++ b/configs/mx6q_tibidabo_defconfig
+@@ -0,0 +1,7 @@
++CONFIG_ARM=y
++CONFIG_ARCH_MX6=y
++CONFIG_TARGET_MX6TIBIDABO=y
++CONFIG_SYS_EXTRA_OPTIONS="IMX_CONFIG=board/tibidabo/mx6q_4x_mt41j128.cfg,MX6Q"
++# CONFIG_CMD_IMLS is not set
++# CONFIG_CMD_FLASH is not set
++CONFIG_SPI_FLASH=y
+-- 
+1.9.1
+
