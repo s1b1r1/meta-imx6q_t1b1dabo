@@ -1,0 +1,26 @@
+From 8f60b49ed191075d96b63549b0e3783722bdaf8a Mon Sep 17 00:00:00 2001
+From: fsessegoinfomob <fausto.sessego@infomob.it>
+Date: Mon, 8 Feb 2016 12:33:34 +0100
+Subject: [PATCH 5/5] fix compilazione 2
+
+---
+ configs/mx6qtibidabo_defconfig | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 configs/mx6qtibidabo_defconfig
+
+diff --git a/configs/mx6qtibidabo_defconfig b/configs/mx6qtibidabo_defconfig
+new file mode 100644
+index 0000000..4554509
+--- /dev/null
++++ b/configs/mx6qtibidabo_defconfig
+@@ -0,0 +1,7 @@
++CONFIG_ARM=y
++CONFIG_ARCH_MX6=y
++CONFIG_TARGET_MX6TIBIDABO=y
++CONFIG_SYS_EXTRA_OPTIONS="IMX_CONFIG=board/tibidabo/mx6q_4x_mt41j128.cfg,MX6Q"
++# CONFIG_CMD_IMLS is not set
++# CONFIG_CMD_FLASH is not set
++CONFIG_SPI_FLASH=y
+-- 
+1.9.1
+
